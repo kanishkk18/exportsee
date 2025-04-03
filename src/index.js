@@ -83,7 +83,7 @@ ReactDOM.render(
       <ChakraProvider theme={theme}>
         <React.StrictMode>
           <ThemeEditorProvider>
-            <ClerkProvider publishableKey="pk_test_aGVyb2ljLW1vbGUtNzkuY2xlcmsuYWNjb3VudHMuZGV2JA">
+            <ClerkProvider publishableKey="pk_test_c21vb3RoLWxvbmdob3JuLTY5LmNsZXJrLmFjY291bnRzLmRldiQ">
               <Router>
                 <App />
               </Router>
