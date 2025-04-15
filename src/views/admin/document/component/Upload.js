@@ -59,7 +59,7 @@ export default function Upload(props) {
             my={{ base: "auto", "2xl": "10px" }}
             mx='auto'
             textAlign='start'>
-            Accepted File Types (Images, PDFs, Word docs, Powerpoint, Excel, ZIP, and video files - 15MB max)
+          Accepted File Types (Images, PDFs, Word docs, Powerpoint, Excel, ZIP - 200KB max)
           </Text>
         </Flex>
       </GridItem>
