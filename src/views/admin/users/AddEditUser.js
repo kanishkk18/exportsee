@@ -194,6 +194,39 @@ const AddEditUser = (props) => {
                             </Select>
                         </GridItem>
 
+                        {userAction !== "add" && (
+                            <GridItem colSpan={{ base: 12 }}>
+                                <FormLabel display='flex' ms='4px' fontSize='sm' fontWeight='500' mb='8px'>
+                                    Password
+                                </FormLabel>
+                                <InputGroup size='md'>
+                                    <Input
+                                        isRequired={true}
+                                        fontSize='sm'
+                                        placeholder='Enter Your Password'
+                                        name='password'
+                                        size='lg'
+                                        variant='auth'
+                                        type={show ? "text" : "password"}
+                                        value={values.password}
+                                        onChange={handleChange}
+                                        onBlur={handleBlur}
+                                        borderColor={errors.password && touched.password ? "red.300" : null}
+                                        className={errors.password && touched.password ? "isInvalid" : null}
+                                    />
+                                    <InputRightElement display='flex' alignItems='center' mt='4px'>
+                                        <Icon
+                                            color={'gray.400'}
+                                            _hover={{ cursor: "pointer" }}
+                                            as={show ? RiEyeCloseLine : MdOutlineRemoveRedEye}
+                                            onClick={showPass}
+                                        />
+                                    </InputRightElement>
+                                </InputGroup>
+                                <Text mb='10px' color={'red'}>{errors.password && touched.password && errors.password}</Text>
+                            </GridItem>
+                        )}
+
                         {userAction !== "edit" && (
                             <GridItem colSpan={{ base: 12 }}>
                                 <FormLabel display='flex' ms='4px' fontSize='sm' fontWeight='500' mb='8px'>
