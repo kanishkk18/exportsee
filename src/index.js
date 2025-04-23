@@ -15,6 +15,7 @@ import { store, persistor } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
 import "./index.css"
 import { ClerkProvider, useUser, useAuth } from '@clerk/clerk-react';
+import ClerkToast from "components/ui/clerkToast"
 
 // Centralized function to validate and retrieve user
 function getUser() {
@@ -60,6 +61,7 @@ function App() {
   return (
     <>
       <ToastContainer />
+          <ClerkToast/>
       <Routes>
         {user && user.role ? (
           user.role === 'user' ? (
