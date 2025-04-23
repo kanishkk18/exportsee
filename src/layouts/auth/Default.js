@@ -39,8 +39,20 @@ function AuthIllustration(props) {
           overflow="hidden"
           right="0px"
         >
-          {illustrationBackground ? (
-            <Link to="#" target="_blank" style={{ height: "100%", width: "100%" }}>
+         
+            {/* <div className="flex-1 w-full rounded-bl-[10rem] bg-gradient-to-br from-purple-400 via-blue-600 to-blue-700 p-8 hidden lg:flex flex-col items-center justify-center text-center">
+              <div className="bg-white rounded-full p-8 mb-8">
+                <div className="w-24 h-24 rounded-full bg-blue-600" />
+              </div>
+              <h2 className="text-4xl font-bold text-white mb-4">Exportseese</h2>
+              <Link
+                to="/"
+                className="text-white/80 hover:text-white bg-white/10 px-6 py-3 rounded-full"
+              >
+                <span className="block font-semibold">Exportseese.com</span>
+              </Link>
+            </div> */}
+             <Link to="https://exporteese.com/" target="_blank" style={{ height: "100%", width: "100%" }}>
               {/* <Flex
                 bg={`url(${illustrationBackground})`}
                 justify="center"
@@ -60,20 +72,7 @@ function AuthIllustration(props) {
       }}
     />
             </Link>
-          ) : (
-            <div className="flex-1 w-full rounded-bl-[10rem] bg-gradient-to-br from-purple-400 via-blue-600 to-blue-700 p-8 hidden lg:flex flex-col items-center justify-center text-center">
-              <div className="bg-white rounded-full p-8 mb-8">
-                <div className="w-24 h-24 rounded-full bg-blue-600" />
-              </div>
-              <h2 className="text-4xl font-bold text-white mb-4">Exportseese</h2>
-              <Link
-                to="/"
-                className="text-white/80 hover:text-white bg-white/10 px-6 py-3 rounded-full"
-              >
-                <span className="block font-semibold">Exportseese.com</span>
-              </Link>
-            </div>
-          )}
+        
         </Box>
         <Footer />
       </Flex>
